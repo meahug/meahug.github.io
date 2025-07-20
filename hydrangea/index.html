@@ -180,7 +180,7 @@
 
     <div class="row">
       <div class="column">
-        <img src="photohydrangea.png" style="float:left; max-width:300px; margin-right: 2rem; margin-bottom: 2rem">
+        <img src="photohydrangea.png" style="float:left; max-width:300px; margin-right: 2rem; margin-bottom: 2rem" alt="A bush of bright purple-blue hydrangea flowers photographed at night with flash">
       </div>
       <div class="column">
         What the flowers around us say about the earth beneath our feet
@@ -200,7 +200,7 @@
         <div class="sticky-thing">
 <!-- Sticky Thing 1 goes below this line -->
 
-<img id="scrollyPhoto" class="photoDiv" src="hydrangeapartial1.png">
+<img id="scrollyPhoto" class="photoDiv" src="hydrangeapartial1.png" alt="A map depicting hydrangea colors on Prospect Place in Brooklyn">
 
 <!-- Sticky Thing 1 goes above this line -->
 
@@ -234,7 +234,7 @@
 
       <p>Prospect Place's acidic average soil pH tracks to USA regional soil pH estimates, although there's a lot of variation in soil pH locally. Soil pH is determined in part by climate. Rainier, moister regions like the Northeast (including Brooklyn), the Southeast and the Pacific Northwest generally have more acidic (lower pH) soil. Dryer areas like the West and Southwest have more alkaline (higher pH) soil. </p>
 <p>
-      <img src="usamap.png" style="width:100%;">
+      <img src="usamap.png" style="width:100%;" alt="A map of the average approximate soil pH across the USA, ranging from acidic to alkaline. The Northeast, where Brooklyn is, is more acidic, while the West is more basic.">
     </p>
       <p>Soil pH is also determined by the underlying rock beneath the soil. Low-pH granite rock in the East creates more acidic soil, while high-pH limestone and shale in the West creates more alkaline soil. <br><br>
     <h2>What rocks lie beneath Prospect Place's soil? </h2> 
@@ -243,7 +243,7 @@
     <p>According to the Urban Soil Institute, the area of Brooklyn around Prospect Place is primarily pavement and buildings, with a <b>till substratum</b> soil type. Soil around pavement and buildings is prone to manmade chemical disturbances from road salts and concrete, but these disturbances are alkaline in nature and tend to increase overall soil pH. This potential for higher pH didn't seem to noticeably skew Prospect Place hydrangeas' lower soil pH.
     <br><br>I was surprised to find that till substratum is also known as glacial till - sediment deposited from a glacier. Glacial sediment tends to create soil with lower pH. <br><br>
     New York City was built on the precipice of the Laurentide ice sheet that existed some 20,000 years ago. Around 13,000 years ago, this ice sheet melted, with its <i>terminal moraine</i> (or end of the ice sheet) landing along the path of the hydrangeas on Prospect Place. <br><br>The terminal moraine accumulates glacial debris as the ice sheet travels, and when the ice sheet melts, it deposits acidic glacial till soil along its path.
-    <img src="icesheet.png" style="width: 100%; min-width:300px; margin-top: 3rem;margin-bottom: 3rem;">
+    <img src="icesheet.png" style="width: 100%; min-width:300px; margin-top: 3rem;margin-bottom: 3rem;" alt="A map of NYC boroughs showing the location of the Laurentide ice sheet 20,000 years ago. The end border of the Laurentide ice sheet, the terminal moraine, stretches across central Brooklyn, Staten Island and Queens. This is where glacial till was deposited.">
 
     This glacial till is as deep as 10-30 meters beneath the surface of Brooklyn's soil, via the New York State Museum. Still, with the amount of human disturbance in New York City soil, it's tricky to definitively attribute 20,000 year old glaciers directly to today's soil pH. 
     <br><br>All the same, it's fascinating to think of hydrangeas broadcasting some 20,000 year old soil information through their blooms. <br><br>What do the flowers around you say about the earth beneath your feet?
@@ -279,33 +279,33 @@
         // Entering Step One
       d3.select("#step1").on('stepin',function(e) {
         console.log("We've arrived at STEP ONE in the photo div")
-        d3.select("#scrollyPhoto").attr("src", "hydrangeapartial2.png");
+        d3.select("#scrollyPhoto").attr("src", "hydrangeapartial2.png", "alt", "A map depicting hydrangea colors on Prospect Place in Brooklyn");
       })
 
         // Entering Step Two
         d3.select("#step2").on('stepin',function(e) {
         console.log("We've arrived at STEP TWO in the photo div")
-        d3.select("#scrollyPhoto").attr("src", "hydrangeafullnopH.png");
+        d3.select("#scrollyPhoto").attr("src", "hydrangeafullnopH.png",  "alt", "A map depicting hydrangea colors on Prospect Place in Brooklyn");
       })
 
        // Entering Step Three
        d3.select("#step3").on('stepin',function(e) {
         console.log("We've arrived at STEP Three in the photo div")
-        d3.select("#scrollyPhoto").attr("src", "hydrangeafullwithpH.png");
+        d3.select("#scrollyPhoto").attr("src", "hydrangeafullwithpH.png",  "alt", "A map depicting hydrangea colors on Prospect Place in Brooklyn along with a corresponding pH scale. Blue flowers are more acidic and pink flowers are more basic");
       })
 
 
        // Entering Step Four
        d3.select("#step4").on('stepin',function(e) {
         console.log("We've arrived at STEP Four in the photo div")
-        d3.select("#scrollyPhoto").attr("src", "hydrangeapotted.png");
+        d3.select("#scrollyPhoto").attr("src", "hydrangeapotted.png", "alt", "A map depicting potted hydrangeas on Prospect Place. Their average pH is 6.8, so they are less acidic than the average hydrangea");
       })
 
 
        // Entering Step Five
        d3.select("#step5").on('stepin',function(e) {
         console.log("We've arrived at STEP Four in the photo div")
-        d3.select("#scrollyPhoto").attr("src", "hydrangeaunpotted.png");
+        d3.select("#scrollyPhoto").attr("src", "hydrangeaunpotted.png", "alt", "A map depicting unpotted hydrangeas on Prospect Place. Their average pH is 5.3, so they are more acidic than potted hydrangeas");
       })
 
 
