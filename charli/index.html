@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>brat summer 4ever</title>
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-size: 20px;
+      font-family: 'Arial narrow', sans-serif;
+      font-weight:300;
+      text-rendering: optimizeLegibility;
+      background:#313339;
+      color:#eee;
+      letter-spacing:0.5px;
+    }
+
+    .content, .quotebox {
+      max-width: 640px;
+      margin: 5rem auto;
+      
+    }
+
+    .quote {
+      position:relative;
+      width:40%;
+      font-family: 'Arial narrow', sans-serif;
+      font-size:14px;
+      color:#8ACE00;
+      opacity:.7;
+      display:inline-block;
+    }
+
+    .header {
+      padding: 3em 0;
+      padding-bottom: 2em;
+    }
+
+    a {
+      color: #ccc;
+    }
+
+    i {color:#bbb;}
+
+    .footer {
+      background: #f4f4f4;
+      text-align: center;
+      font-size: 0.8em;
+      margin-top: 4em;
+      padding: 4em 0;
+    }
+
+    figure {
+      margin: 0;
+      padding-bottom: 1.2em;
+    }
+
+    figcaption {
+      font-size: 0.8em;
+      text-align: center;
+      margin-top: 0.5em;
+      color: #666;
+    }
+
+    b {
+      font-weight:700;
+      color:#8ACE00;
+      letter-spacing:0px;
+    }
+    h1 {
+      font-family: 'arial narrow', sans-serif;
+      font-weight: normal;
+      font-size: 3.2em;
+      margin-bottom:0.3em;
+      letter-spacing:0;
+      line-height: 1;
+      color: #8ACE00;
+    }
+    .stat {
+      margin: auto;
+      font-size:24px;
+      color:#c7b1f2;
+      font-family: 'arial narrow', sans-serif;
+      font-weight:normal;
+      z-index:10;
+      text-align:center;
+    }
+    
+    .stat b{ 
+      color:#c7b1f2;
+    }
+
+    .subhead {
+      font-family: 'inter', sans-serif;
+      font-weight:normal;
+      text-transform:uppercase;
+      font-size: 0.8em;
+      letter-spacing:4px;
+      line-height:1.4;
+      color: #8ACE00;
+    }
+
+    .byline {
+      font-family: 'inter', sans-serif;
+      color:#ccc;
+      font-size: 0.8em;
+      text-transform:uppercase;
+      letter-spacing:2px;
+      margin-bottom:0.4em;
+      
+    }
+
+    iframe,
+    img,
+    video {
+      max-width: 100%;
+    }
+
+    p {
+      line-height: 1.6;
+      margin: 0;
+      padding-bottom: 1.2em;
+    }
+
+    ul {
+      margin: 0;
+      padding-bottom: 1em;
+      line-height: 1.6;
+    }
+
+    iframe {
+      padding-bottom: 1.2em;
+    }
+
+    code {
+      font-family: 'Courier New', monospace;
+      background: #fff880;
+    }
+
+    .full-width figure {
+      text-align: center;
+    }
+
+    /* margin on mobile */
+    @media (max-width: 640px) {
+      body {
+        font-size: 18px;
+      }
+
+      .content, .quotebox {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+      }
+    }
+  </style>
+  <link href="scrolly-styles.css" rel="stylesheet">
+  <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollama/3.2.0/scrollama.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scrolly-video@latest/dist/scrolly-video.js"></script>
+</head>
+
+<body>
+  <div class="content">
+    <div class="header">
+      <h1>brat summer 4ever:</h1>
+      <p class="subhead">BRAT's second life through its visionary remix album</p>
+    </div>
+    <div class="byline">
+      <p>By <a href="meaganhughes.com">Meagan Hughes</a></p>
+    </div>
+    <p>What makes a remix album? Is it simply heavier beats, chopped vocals, and buzzy guest features? Or can it be something more?</p>
+    <p>After releasing <i>BRAT</i>, the viral album that wrought 2024's "brat summer" zeitgeist, Charli XCX returned only 4 months later with a thoroughly original and inspired remix album. </p>
+    <p><i>Brat and it's completely different but also still brat</i> is an extension of the volatile, yet vulnerable BRAT universe.</p>
+    <p>What is the symbiotic relationship between these two albums?</p>
+  </div>
+  <section id="scrolly-video" class="scrolly-container">
+    <div class="sticky-thing">
+    </div>
+    <div class="steps-container">
+      <div class="step" id="step-first">
+        <p><b>365 feat Shygirl</b> is a remix of <i>365</i>, off of the original BRAT album. <br><br>
+          It also samples <i>Frequency by Altern 8</i>, a 1992 UK rave banger.<br><br>
+            <img src="frequency.jpeg" alt="Album cover of Frequency by Altern 8 - two men wearing hooded jackets and masks" style="max-width:125px;">
+          </p>
+
+      </div>
+      
+      <div class="step" id="step-second">
+        <p><b>365</b> samples the core melody of <i>360</i>, the ubiquitous opening track of BRAT. </p>
+      </div>
+
+      <div class="step" id="step-third">
+        <p><i>365</i> also reaches beyond the library of BRAT to sample <b>forever</b> from Charli's 2020 lockdown mixtape, <i>how i'm feeling now</i>.<br><br>
+          <img src="howimfeelingnow.jpg" alt="Album cover of how i'm feeling now by Charli XCX - Charli laying in bed, in white underwear with a camcorder" style="max-width:125px;">
+        </p>
+      </div>
+      
+      <div class="step" id="step-fourth">
+        <p>What about the <b>Club classics remix ft Bb trickz</b>?<br><br>
+          It doesn't just remix Club classics — it also samples <i>365</i>, which tangles up <i>Club classics</i> with <i>forever</i> and <i>360</i> via the transitive property.
+        
+        </p>
+      </div>
+      <div class="step" id="step-fifth">
+        
+      </div>
+
+      <div class="step" id="step-sixth">
+        <p>The original <b>Club classics</b> gets its iconic "right now" adlib from a <a href="https://www.youtube.com/watch?v=w8AyaI4z1Q8">2010 interview</a> with teenage Charli XCX for Rankin's Destroy. <br><br>
+          <i>Club classics</i> was produced by Charli's now-husband, George Daniel of The 1975, who may have unearthed the nostalgic interview.<br><br>
+          <img src="bbcharli.png" alt="A teenage Charli XCX with a blue wig and costume makeup from a 2010 interview" style="max-width:300px;">
+        </p>
+      </div>
+    </div>
+  </section>
+  <div class="content" style="margin-bottom:2rem;">
+    <p>Through sampling and remixing, <i>Brat and it's completely different but also still brat</i> compounds <i>BRAT</i>'s musical motifs into a self-referential world.</p>
+   <br><br>
+ <p class ="subhead"> which brat is more popular?</p><br>
+
+
+    <p>Symbiosis aside, album versus album, the winner is clear: <i>BRAT</i>'s total album plays since release are over double that of <i>Brat and it's completely different but also still brat</i>, according to LastFM. 
+    </p>
+    <p>Track versus track, the remix album pulls its weight in play counts, especially on songs with featured guests that have large fandoms (Lorde, Billie Eilish, Troye Sivan, and Ariana Grande).</p>
+
+  </div>
+
+  <div class="full-width">
+    <figure>
+      <img
+        src="bratchart.png" style="width:100%; max-width:900px;">
+    </figure>
+  </div>
+
+  <div class="content" style="margin-top:2rem;">
+    <p><i>Guess feat Billie Eilish</i> and <i>Girl, so confusing feat Lorde</i> are two songs where guest features add heightened drama to the existing narrative arc of the original tracks. The <i>Guess</i> remix, which has nearly double the plays of any song in the brativerse, layers an already raunchy, voyeuristic bop with Billie seducing Charlie — and Charlie flirting with queerness.</p>
+    <p>The <i>Girl, so confusing feat Lorde</i> remix builds on the original track's exploration of the isolation and anxiety of girlhood. Lorde's explosive verse that briefly broke the internet restores the alliance between Charli and Lorde while throwing a gauntlet against the music industry.</p>
+   
+
+  </div>
+
+<div class="quotebox"> 
+
+  <p class ="subhead"> when is a feature more than a feature?</p><br>
+
+  <p>In <i>Brat and it's completely different but also still brat</i>, the lines are blurred between featured guests as musical collaborators, confidantes, nemeses, flirtationships, and friends. </p>
+<br>
+<div class="quote" style="top:20%;left:20%;opacity:.7;">
+  Charli calls from a hotel bed<br>
+  Hungover on Tokyo time<br>
+  Charli: Hey, girl, what's up, how you been? I think I need your advice
+  <br>(Caroline: It's crazy, I was just thinking of you, what's on your mind?)
+
+</div>
+
+
+<div class ="stat"><b>6 tracks</b> on the remix album reference Charli's<br> real-life memories with the featured guest</div>
+<br>
+<div class="quote" style="top:40%;left:10%;opacity:.9">
+  
+  Now I wanna think about all the good times
+  <br>Me and A.G. on Mulholland
+  <br>Crazy Uber, straight from a video shoot
+  <Br>Got birthday cake on the way
+</div>
+
+<br>
+<div class="quote" style="top:40%;left:50%; opacity:.5;">
+  
+  
+Well, honestly, I was speechless<br>
+When I woke up to your voice note<br>
+You told me how you'd been feeling<br>
+Let's work it out on the remix<br>
+</div>
+<br><br><br>
+<p>Charli's collabs open a parasocial window into her own relationships and memories. They also create a communal, friend-group feeling (which appears, at times, more exclusionary and it-girl than welcoming):
+</p>
+<br>
+
+
+<div class="quote" style="top:10%;left:0%;opacity:.9">
+  
+  Bb xcx es un clásico automático
+</div>
+
+
+<div class="quote" style="top:40%;left:10%; opacity:.5;">
+  
+  
+'Cause I ride for you, Charli</div>
+
+<div class ="stat" style = "padding:1rem;"><b>10 tracks</b> on the remix album give a shout out to Charli</div>
+
+
+
+<div class="quote" style="top:20%;left:10%;opacity:.7;">
+  Boy, come see me we could pop<br> our shit to Charli
+
+</div>
+<br>
+<div class="quote" style="top:80%;left:30%;opacity:1.0;">
+  Your favorite pop star is into me, <br>Yung Lean, and Charli
+
+</div>
+
+
+<br><br>
+<br><br>
+
+
+
+<p>And of course, because the brativerse is self-referential, many tracks on the remix album reference other songs and lyrics from BRAT.
+</p>
+
+
+
+
+<div class="quote" style="top:10%;left:30%;opacity:.9">
+  
+  360, find a way to deal</div>
+<br>
+
+<div class="quote" style="top:40%;left:10%; opacity:.5;">
+  
+  
+  Livin' that life is romantic, right?</div>
+
+<div class ="stat" style = "padding:1rem;"><b>8 tracks</b> on the remix album reference other songs from BRAT</div>
+
+
+
+<div class="quote" style="top:20%;left:40%;opacity:.7;">
+  Think about you all the time
+
+</div>
+<br>
+<div class="quote" style="top:80%;left:50%;opacity:1.0;">
+  So you could work it out out out out
+
+</div>
+<br><br><br><br>
+<p>Along with 2024, brat summer has come and gone.<br><br>
+  But <i>Brat and it's completely different but also still brat</i> is always there to escape to, pulling you into its inside jokes, cool-girl cast, and ouroboros of BRAT.
+</p>
+<br><br>
+
+  </div>
+
+  
+  
+  
+
+
+
+
+
+
+  <script>
+    /*
+    Different videos need different things - does the reader need to see
+    the entire screen of the video, or you want to make sure it covers the
+    entire window?
+
+    You can experiment with yours by removing the // from the full and
+    cover options below to see how it looks with your videos. 
+   
+    You can see parameters at 
+    https://github.com/dkaoster/scrolly-video?tab=readme-ov-file#-options--attributes
+
+    You might also need to adjust object-fit being 'cover' vs 'contain' in the CSS below
+
+    Be sure to check mobile!!
+    */
+    new ScrollyVideo({
+      scrollyVideoContainer: document.querySelector("#scrolly-video .sticky-thing"),
+      src: "remix9.mov",
+      full: false,
+      cover: true,
+      frameThreshold: 0.1,
+
+    });
+  </script>
+  <style>
+    .step {
+      height: 100vh;
+      margin-bottom: 0;
+    }
+
+    
+
+    .sticky-thing > canvas {
+      object-fit: contain;
+      max-width:1200px;
+    } 
+  </style>
+
+</body>
+
+</html>
